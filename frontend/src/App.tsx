@@ -6,6 +6,7 @@ import Home from './Component/Home';
 import { getActiveUser } from './LocalStorage';
 import Forgetpswd from './Component/Forgetpswd';
 import Changepswd from './Component/ChangePswd';
+import GenrateQuest from './Component/GenrateQuest';
 
 function App() {
   return (
@@ -15,10 +16,15 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/forget" element={<Forgetpswd />} />
         <Route path="/changePassword" element={<Changepswd/>}/>
+        
 
     
-        <Route path="/" element={<PrivateRoute />}>
-          <Route index element={<Home />} /> {/* default child */}
+        <Route path="/home" element={<PrivateRoute />}>
+          <Route index element={<Home />} /> {/* default child */} 
+        </Route>
+
+        <Route path='/genrateQuestion' element={<PrivateRoute />}>
+          <Route index element={<GenrateQuest/>}/>{/* default child */} 
         </Route>
       </Routes>
     </BrowserRouter>

@@ -48,7 +48,7 @@ const Login = () => {
       }
 
       setData({ email: "", password: "" });
-      navigate("/");
+      navigate("/home");
 
     } catch (error) {
       console.error(error);

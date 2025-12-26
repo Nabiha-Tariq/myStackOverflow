@@ -66,6 +66,73 @@ form h3{
     line-height: 42px;
     text-align: center;
 }
+.Question_box{
+    max-height: 1000px;
+    width: 1000px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+
+.Question_box h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+}
+
+/* Labels */
+.Question_box label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+/* Inputs */
+.Question_box input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff; /* text color */
+}
+.Question_box select{
+     display: block;
+    width: 100%;
+    height: 50px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;/* text color */
+}
+.Question_box select option {
+    color: #000000; /* text color of dropdown items */
+    background-color: #ffffff; /* background of dropdown items */
+}
+/* Placeholder color */
+.Question_box input::placeholder {
+    color: #e5e5e5;
+}
+
 
 label {
   display: block;
@@ -90,6 +157,7 @@ input{
 ::placeholder{
     color: #e5e5e5;
 }
+
 button{
     margin-top: 30px;
     width: 100%;
