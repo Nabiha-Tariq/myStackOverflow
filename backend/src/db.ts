@@ -1,9 +1,13 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import mysql from 'mysql2/promise';
 
+console.log("DB PASSWORD:", process.env.PASSWORD);
 const db = mysql.createPool({
   host: 'localhost',
   user: 'root',
-  password: 'nabiha2003',
+  password: process.env.DB_PASSWORD,
   database: 'mystackoverflow',
 });
 
